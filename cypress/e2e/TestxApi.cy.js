@@ -8,7 +8,7 @@ describe('Test + API', () => {
       ]
       it('addUser API', ()=>{
         //url de l'API
-        const url = "http://localhost:8080/testingv3/api/addTest"
+        const url = "http://localhost/TestCypress/api/addTest"
         //nom du test
         const name = "addUserAPI"
         //date du test

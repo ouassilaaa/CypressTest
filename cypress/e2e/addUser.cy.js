@@ -1,3 +1,4 @@
+describe('Register', () => {
 it('insertUser', () => {
     //paramètrage de la page web
     cy.visit('http://localhost/TestCypress/addUser')
@@ -26,3 +27,5 @@ it('insertUser', () => {
     cy.get(':input[name="submit"]').click()
     cy.get('#msgzone').should('contain', "Veuillez remplir tous les champs du formulaire")
   })
+
+})  
