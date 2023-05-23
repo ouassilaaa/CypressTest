@@ -11,6 +11,7 @@
     include './App/Model/Tests.php';
     include './App/Controller/UtilisateurController.php';
     include './App/Controller/ApiTestsController.php';
+    include './App/Controller/ConnexionController.php';
     //utilisation de session_start(pour gérer la connexion au serveur)
     session_start();
     //Analyse de l'URL avec parse_url() et retourne ses composants
@@ -37,6 +38,11 @@
         case '/TestCypress/addTest':
             include './App/Vue/vueAddTest.php';
             break;
+        case '/TestCypress/Connexion':
+            include './App/Vue/vueConnexion.php';
+            // $utilCtrl->connectUser();
+
+            break;    
         default:
             include './error.php';
             break;

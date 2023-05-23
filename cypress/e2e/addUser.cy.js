@@ -12,6 +12,7 @@ it('insertUser', () => {
     //test du message d'erreur
     cy.get('#msgzone').should('contain', "Le compte a été ajouté en BDD")
   })
+  
   it('doublonUser', () => {
     cy.visit('http://localhost/TestCypress/addUser')
     cy.get(':input[name="nom"]').type('Ouass')
